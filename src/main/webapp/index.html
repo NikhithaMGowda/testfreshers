@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            overflow-x: visible;
+
+        }
+
+        #italic {
+            color: rgb(160, 101, 22);
+        }
+
+        #white {
+            color: beige;
+        }
+
+
+        nav {
+            background-color: rgb(78, 72, 72);
+            display: flex;
+
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100px;
+            width: 100%;
+            z-index: 5;
+            /* position: relative;
+            right: 500px; */
+        }
+
+        #color {
+            font-style: normal;
+            position: relative;
+            left: 300px;
+
+        }
+
+        #flex {
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        #menu {
+            display: flex;
+            color: aliceblue;
+            width: 300px;
+            justify-content: space-between;
+            position: relative;
+            left: 50px;
+
+        }
+
+        .button {
+            background-color: rgb(78, 72, 72);
+            border: 2px solid rgb(231, 222, 222);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 19px;
+            position: relative;
+            left: 50px;
+            width: 200px;
+            height: 50px;
+        }
+
+        .button:hover {
+            background-color: #f1f1f1;
+            color: black;
+        }
+
+        img {
+            position: relative;
+            right: 10px;
+        }
+
+        #img3 {
+            height: 120vh;
+            width: 100vw;
+            background-image: url("	https://mobirise.com/extensions/pizzam5/pizza/assets/images/img6-1.jpg");
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+            background-size: cover;
+        }
+
+        #top {
+            position: relative;
+            bottom: 700px;
+            left: 200px;
+            font-size: 100px;
+            font-style: normal;
+            color: rgb(244, 243, 241);
+        }
+
+        .button1 {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: #f4f9f7;
+            position: relative;
+            bottom: 650px;
+            left: 200px;
+        }
+
+        .button2 {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: #f4f9f7;
+            position: relative;
+            left: 700px;
+            top: 150px;
+        }
+
+        h4 {
+            position: relative;
+            bottom: 730px;
+            left: 245px;
+        }
+
+        section {
+            display: flex;
+        }
+
+        article {
+            width: 500px;
+            height: 400px;
+            color: white;
+            position: relative;
+            bottom: 700px;
+            left: 700px;
+            justify-content: space-between;
+        }
+
+        article h1 {
+            font-size: 50px;
+        }
+
+        article p {
+            font-size: 20px;
+        }
+
+        .bgcolor {
+            height: 110vh;
+            width: 100vw;
+            background-color: rgb(79, 75, 75);
+            color: white;
+            position: relative;
+            right: 700px;
+            bottom: 100px;
+            font-family: sans-serif;
+
+        }
+
+        aside {
+            color: white;
+            position: relative;
+            bottom: 750px;
+            right: 500px;
+            font-size: 30px;
+        }
+
+        aside h1 {
+            width: 700px;
+        }
+
+        #second {
+            display: flex;
+            color: rgb(248, 247, 247);
+            height: 700px;
+            width: 1300px;
+            position: relative;
+            bottom: 660px;
+            right: 500px;
+            justify-content: space-evenly;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        #second img {
+            position: relative;
+            right: 0px;
+            left: 35px;
+            width: 1300px;
+            height: 400px;
+        }
+
+        h1 i {
+            color: #a68462;
+        }
+
+        #font {
+            font-size: 25px;
+        }
+
+        .imgsrc {
+            position: relative;
+            bottom: 397px;
+
+        }
+
+        .page3 {
+            height: 110vh;
+            width: 101%;
+            background-color: rgb(79, 75, 75);
+            position: relative;
+            /* right: 700px; */
+            bottom: 405px;
+        }
+
+        #page3 {
+            position: relative;
+            bottom: 1100px;
+            color: white;
+        }
+
+        table {
+            height: 500px;
+            width: 1500px;
+            position: relative;
+            top: 30px;
+            left: 270px;
+            font-size: 40px;
+        }
+
+        #change {
+            font-size: 60px;
+            position: relative;
+            left: 255px;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        #page4 {
+            position: relative;
+            bottom: 975px;
+        }
+
+        .clrtxt {
+            font-size: 60px;
+            line-height: calc(1.3 * (1.98rem + (3.8 - 1.98) * ((100vw - 20rem) / (48 - 20))));
+            font-family: 'Space Grotesk', sans-serif;
+            position: relative;
+            left: 240px;
+            top: 100px;
+
+        }
+
+        .colored-text {
+            color: #a68462 !important;
+        }
+
+        #page5 {
+            height: 600px;
+            width: 102%;
+            background-color: #414142;
+            position: relative;
+            bottom: 980px;
+            color: white;
+        }
+
+        #sec {
+            display: flex;
+            position: relative;
+            left: 250px;
+            top: 100px;
+            height: 400px;
+            width: 900px;
+            font-size: calc(1.0350000000000001rem + (1.1 - 1.0350000000000001) * ((100vw - 20rem) / (48 - 20)));
+            /* line-height: calc(1.4 * (1.0350000000000001rem + (1.1 - 1.0350000000000001) * ((100vw - 20rem) / (48 - 20)))); */
+            line-height: 2.0;
+
+        }
+
+        .mbr {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.9rem;
+            line-height: 2.1;
+            color: #b89c80;
+        }
+
+        .mbr-overlay {
+            position: absolute;
+            pointer-events: none;
+        }
+
+        .page6 {
+            background-image: url("img7-1.jpg");
+            position: relative;
+            background-size: cover;
+            bottom: 980px;
+            height: 600px;
+
+            width: 100vw;
+            /* filter: blur(3px); */
+        }
+
+        .page7 {
+            height: 1400px;
+            width: 135%;
+            background-color: #414142;
+            position: relative;
+            bottom: 230px;
+            color: white;
+        }
+
+
+        .padd {
+            position: relative;
+            top: 100px;
+            left: 200px;
+            font-size: 80px;
+            color: white;
+            width: 1300px;
+        }
+
+        .mbr2 {
+            position: relative;
+            left: 700px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 250%;
+            line-height: 1.3;
+            color: white;
+            width: 1100px;
+            top: 100px;
+        }
+
+        .part {
+            height: 400px;
+            width: 200px;
+            display: flex;
+            position: relative;
+            left: 500px;
+            top: 150px;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .div1 {
+            width: 550px;
+            position: relative;
+            left: 100px;
+            font-size: calc(1.0350000000000001rem + (1.1 - 1.0350000000000001) * ((100vw - 20rem) / (48 - 20)));
+        }
+
+        .div2 {
+            position: relative;
+            left: 250px;
+        }
+
+        .div4 {
+            position: relative;
+            left: 100px;
+            line-height: calc(1.4 * (1.0350000000000001rem + (1.1 - 1.0350000000000001) * ((100vw - 20rem) / (48 - 20))));
+        }
+
+        #anime {
+            animation: 15s linear infinite running rotate360;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div id="flex">
+                <img src="logo.png" height="50px" width="50px">
+                <h1 id="white">Cool!</h1>
+                <h1 id="italic"><i>Pizza</i></h1>
+            </div>
+            <div id="menu">
+                <h1>Buy Pizza</h1>
+                <h1>Contact</h1>
+                <h1>Menu</h1>
+            </div>
+
+            <button class="button">
+                <h1>Send Message</h1>
+            </button>
+            <!-- <div><i class="fa-solid fa-bars fa-2xl" style="color: #f1efef;"></i></div> -->
+
+        </nav>
+    </header>
+    <main>
+        <div id="img3"></div>
+        <div id="top">
+            <h1>pizza</h1>
+        </div>
+    </main>
+    <section>
+        <div><button class="button1"></button>
+            <h4>Contact!</h4>
+        </div>
+        <article>
+            <h1><b>Pizzeria</b> <i>in the heart</i><b>of the town</b> </h1>
+            <br>
+            <p>Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Eros in cursus turpis massa. Mauris
+                sit amet massa vitae tortor condimentum lacinia.</p>
+
+
+        </article>
+    </section>
+    <article>
+        <div class="bgcolor"></div>
+        <aside>
+            <h1><i> Get Your</i> Slice of perfection</h1>
+        </aside>
+        <div id="second">
+            <p id="font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, enim? Aliquid odio impedit
+                quod quasi iste possimus officia, at nihil expedita unde nulla nisi qui? Magnam aliquam ipsum sint quis?
+                <br>
+                <br>
+                Architecto iure accusamus numquam! Id velit tempora exercitationem, in maiores vel nostrum cupiditate
+                veritatis omnis iusto expedita hic perspiciatis esse, similique autem fugiat pariatur explicabo
+                blanditiis temporibus eos. Enim, debitis!
+            </p>
+            <img src="img1-1.jpg" height="400px" width="800px" alt="">
+        </div>
+    </article>
+    <!-- <img src="./img3-1.jpg" alt="" height="700px" width="100%"> -->
+    <div class="imgsrc">
+        <img src="img5-1.jpg" height="440px" width="1545px" alt="">
+    </div>
+    <div>
+        <div class="page3"></div>
+    </div>
+    <div id="page3">
+        <p id="change">The place for tasty food</p>
+        <table>
+            <tr>
+                <td><img src="logo.png" height="100px" width="100px" alt=""></td>
+                <td>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit.</p>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="logo.png" height="100px" width="100px" alt=""></td>
+                <td>
+                    <p>Voluptatem accusantium doloremque laudantium.</p>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="logo.png" height="100px" width="100px" alt=""></td>
+                <td>
+                    <p>Quis autem vel eum iure reprehenderit qui in ea.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="page4">
+        <img src="img2-1.jpg" height="450px" width="102%" alt="">
+    </div>
+    <div>
+        <div id="page5">
+            <h3 class="clrtxt">
+                <i class="colored-text">Get it</i> while it's hot
+            </h3>
+            <section id="sec">
+                <div>
+                    <p class="mbr">We're careful</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis deserunt magni corrupti
+                        impedit libero ullam nostrum voluptatibus sint, deleniti animi placeat harum eum tenetur
+                        molestiae quas laboriosam eius ducimus autem.
+
+                    </p>
+                </div>
+                <div></div>
+                <div>
+                    <p class="mbr">We're certified</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sunt eaque cumque dolores natus
+                        magnam pariatur, hic quo harum error reiciendis voluptatibus deleniti molestiae repellat
+                        accusamus ex aliquid! Nam, error.</p>
+                </div>
+
+            </section>
+        </div>
+    </div>
+    <section>
+        <div class="page6">
+            <h3 class="padd">
+                <i class="colored-text">Feel Hunger!</i> Order your
+                favorite food
+            </h3>
+            <div><button class="button2"><b>Contact!</b></button>
+            </div>
+        </div>
+    </section>
+    <aside>
+        <div class="page7">
+            <h3 class="mbr2"><i class="colored-text">We are pizza makers,</i>
+                and our mission is to make cool pizza which feeds all your senses
+            </h3>
+            <div class="part">
+
+                <div class="div1">
+                    <div class="div4">
+                        <p>Aliquam faucibus purus in massa tempor nec feugiat nisl pretium. Nunc consequat interdum
+                            varius
+                            sit amet. Tincidunt dui ut ornare lectus sit amet est placerat. Suspendisse potenti nullam
+                            ac
+                            tortor vitae purus faucibus. Faucibus nisl tincidunt eget nullam non.</p>
+                        <br>
+                        <br>
+                        <p>Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Ullamcorper eget nulla facilisi
+                            etiam
+                            dignissim diam quis enim. Et egestas quis ipsum suspendisse ultrices gravida. Consequat nisl
+                            vel
+                            pretium lectus.</p>
+                    </div>
+                    <table class="div1">
+                        <tr>
+                            <td><i class="colored-text">01</i></td>
+                            <td><i class="colored-text">02</i></td>
+                        </tr>
+                        <tr>
+                            <td>Vulputate eu scelerisque felis imperdiet proin</td>
+                            <td>Porta nibh venenatis cras sed felis eget velit</td>
+                        </tr>
+                        <tr>
+                            <td><i class="colored-text">03</i></td>
+                            <td><i class="colored-text">04</i></td>
+                        </tr>
+                        <tr>
+                            <td>Ipsum consequat nisl vel pretium lectus quam id</td>
+                            <td>Nibh mauris cursus mattis molestie a iaculis</td>
+                        </tr>
+                        <tr>
+                            <td><i class="colored-text">05</i></td>
+                            <td><i class="colored-text">06</i></td>
+                        </tr>
+                        <tr>
+                            <td>Dolor magna eget est lorem ipsum dolor sit</td>
+                            <td>Mattis pellentesque id nibh tortor id aliquet</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="div2"><img src="img3-1.jpg" alt="" height="800px" width="500px"></div>
+            </div>
+        </div>
+    </aside>
+    <article id="page8">
+        <div class="bgcolor"></div>
+        <aside>
+            <h1><i> Get Your</i> Slice of perfection</h1>
+        </aside>
+        <div id="second">
+            <p id="font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, enim? Aliquid odio impedit
+                quod quasi iste possimus officia, at nihil expedita unde nulla nisi qui? Magnam aliquam ipsum sint quis?
+                <br>
+                <br>
+                Architecto iure accusamus numquam! Id velit tempora exercitationem, in maiores vel nostrum cupiditate
+                veritatis omnis iusto expedita hic perspiciatis esse, similique autem fugiat pariatur explicabo
+                blanditiis temporibus eos. Enim, debitis!
+            </p>
+            <img src="img1-1.jpg" height="400px" width="800px" alt="">
+        </div>
+    </article>
+
+
+
+
+</body>
+
+</html>
